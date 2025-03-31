@@ -115,7 +115,7 @@ export default function LoginPage() {
                   className='group p-0 text-sm font-medium'
                   asChild
                 >
-                  <a href='/auth/register'>
+                  <a href='sign-up'>
                     Criar agora
                     <ArrowRight className='ml-1 h-3 w-3 transition-transform group-hover:translate-x-1' />
                   </a>

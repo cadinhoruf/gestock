@@ -25,7 +25,7 @@ export const Header = () => {
     <header className='backdrop-brightness fixed top-0 z-50 w-full bg-background/80 backdrop-blur-md'>
       <div className='container mx-auto flex h-16 items-center justify-between px-4'>
         <Link href='/' className='text-xl font-bold text-blue-600'>
-          StoQ
+          Gestock
         </Link>
         <nav className='hidden items-center gap-8 md:flex'>
           <Link
@@ -38,14 +38,14 @@ export const Header = () => {
         </nav>
         <div className='flex items-center gap-4'>
           <Link
-            href='/auth'
+            href='/sign-in'
             className='flex items-center gap-2 text-sm font-medium text-gray-700 transition-colors hover:text-blue-600'
           >
             <LogIn className='h-4 w-4' />
             Login
           </Link>
           <Link
-            href='/auth/register'
+            href='sign-up'
             className='flex items-center gap-2 rounded-full bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-all hover:bg-blue-700'
           >
             <UserPlus className='h-4 w-4' />

@@ -25,30 +25,31 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
 import { MixerVerticalIcon } from '@radix-ui/react-icons'
+import { UserInfo } from './user-info'
 const items = [
   {
     title: 'Dashboard',
-    url: '/app/dashboard',
+    url: '/dashboard',
     icon: Home
   },
   {
     title: 'Produtos',
-    url: '/app/products',
+    url: '/products',
     icon: PackageSearch
   },
   {
     title: 'Clientes',
-    url: '/app/clients',
+    url: '/clients',
     icon: Handshake
   },
   {
     title: 'Vendas',
-    url: '/app/sales',
+    url: '/sales',
     icon: ShoppingBasket
   },
   {
     title: 'Configurações',
-    url: '/app/settings/profile',
+    url: '/settings/profile',
     icon: MixerVerticalIcon
   }
 ]
@@ -107,7 +108,7 @@ export function AppSidebar({ planName }: AppSidebarProps) {
         </SidebarGroup>
       </SidebarContent>
       <SidebarFooter className='border-t border-border'>
-        {/* <UserInfo user={user} planName={planName} /> */}
+        <UserInfo />
       </SidebarFooter>
     </Sidebar>
   )
@@ -116,7 +117,7 @@ export function AppSidebar({ planName }: AppSidebarProps) {
 const SidebarLogo = () => {
   return (
     <Link
-      href='/app/dashboard'
+      href='/dashboard'
       className='group-data-[collapsible=icon]/35 flex items-center gap-2 rounded-lg p-1 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground'
     >
       <div

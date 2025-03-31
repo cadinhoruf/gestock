@@ -14,7 +14,7 @@ import Link from 'next/link'
 import { Header } from '@/app/components/header'
 
 export const metadata: Metadata = {
-  title: 'StoQ - Transforme a Gestão do Seu Negócio',
+  title: 'Gestock - Transforme a Gestão do Seu Negócio',
   description:
     'Plataforma completa de gestão empresarial que simplifica processos e impulsiona resultados'
 }
@@ -43,7 +43,7 @@ export default async function Home() {
               </p>
               <div className='flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start'>
                 <Link
-                  href='/auth'
+                  href='/sign-in'
                   className='group flex items-center justify-center gap-2 rounded-full bg-blue-600 px-8 py-4 font-semibold text-white transition-all hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/25'
                 >
                   <Zap className='h-5 w-5 transition-transform group-hover:scale-110' />
@@ -225,7 +225,7 @@ export default async function Home() {
             </p>
             <div className='flex flex-col items-center gap-4 sm:flex-row sm:justify-center'>
               <Link
-                href='/auth/register'
+                href='sign-up'
                 className='group flex items-center gap-2 rounded-xl bg-white px-8 py-4 font-semibold text-blue-600 transition-all hover:bg-blue-50'
               >
                 <Zap className='h-5 w-5 transition-transform group-hover:scale-110' />
@@ -239,7 +239,9 @@ export default async function Home() {
           <div className='container mx-auto px-4'>
             <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-4'>
               <div>
-                <h3 className='mb-4 text-lg font-bold text-gray-100'>StoQ</h3>
+                <h3 className='mb-4 text-lg font-bold text-gray-100'>
+                  Gestock
+                </h3>
                 <p className='mb-4 text-gray-300'>
                   Transformando a gestão do seu negócio com soluções
                   inteligentes.
@@ -275,7 +277,7 @@ export default async function Home() {
 
             <div className='mt-8 border-t border-gray-800 pt-8 text-center'>
               <p className='text-gray-300'>
-                &copy; {new Date().getFullYear()} StoQ. Todos os direitos
+                &copy; {new Date().getFullYear()} Gestock. Todos os direitos
                 reservados.
               </p>
             </div>
